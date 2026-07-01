@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Semillitas del Saber</title>
+<link rel="stylesheet" href="css/estilos_contacto.css">
+</head>
+<body>
+<nav>
+<ul class="menu">
+<li class="logo">
+<img src="img/logo.png" alt="Logo Semillitas del Saber">
+<p>I.E TECNICA<br>SEMILLITAS<br>DEL SABER</p>
+</li>
+<li><a href="index.html">Inicio</a></li>
+<li>
+<a href="Nosotros.html">Nosotros &#9662;</a>
+<ul class="submenu">
+<li><a href="Nosotros.html#Historia">Historia</a></li>
+<li><a href="Nosotros.html#Mision">Misión</a></li>
+<li><a href="Nosotros.html#Vision">Visión</a></li>
+<li><a href="Nosotros.html#Perfil">Perfil</a></li>
+<li><a href="Nosotros.html#Instalaciones">Instalaciones</a></li>
+</ul>
+</li>
+<li>
+<a href="Programas_academicos.html">Programas Académicos &#9662;</a>
+<ul class="submenu">
+<li><a href="Programa_academico_preescolar.html">Preescolar</a></li>
+<li><a href="Programa_academico_primaria.html">Primaria</a></li>
+<li><a href="Programa_academico_basica.html">Básica</a></li>
+<li><a href="Programa_academico_bachillerato.html">Bachillerato</a></li>
+</ul>
+</li>
+<li><a href="Servicios.html">Servicios</a></li>
+<li><a href="Noticias.html">Noticias</a></li>
+<li><a href="Contacto.html">Contacto</a></li>
+<li><a href="Galeria.html">Galería</a></li>
+<li class="foto-usuario">
+    <a href="Iniciar_sesión.html">
+        <img src="img/sin%20foto.png" alt="Iniciar sesión">
+    </a>
+</li>
+</ul>
+</nav>
+<main>
+<section class="contacto">
+<h1>Información de Contacto</h1>
+<p>Estamos disponibles para atender sus inquietudes y brindar información sobre nuestros programas académicos, procesos de admisión y servicios institucionales.</p>
+<div class="contenedor-contacto">
+<article class="tarjeta-contacto">
+<h2>Ubicación</h2>
+<p>📍 Tunja - Boyacá</p>
+<p>Calle 23 # 0-00</p>
+</article>
+<article class="tarjeta-contacto">
+<h2>Teléfonos</h2>
+<p>📞 313 789 9023</p>
+<p>📞 (608) 000 0000</p>
+</article>
+<article class="tarjeta-contacto">
+<h2>Correo Electrónico</h2>
+<p>✉ contacto@semillitasdelsaber.edu.co</p>
+<p>✉ admisiones@semillitasdelsaber.edu.co</p>
+</article>
+<article class="tarjeta-contacto">
+<h2>Horario</h2>
+<p>Lunes a Viernes</p>
+<p>7:00 a.m - 4:00 p.m</p>
+</article>
+</div>
+</section>
+<section class="redes">
+<h2>Síguenos en Redes Sociales</h2>
+<div class="iconos-redes">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">WhatsApp</a>
+</div>
+</section>
+<section class="mapa">
+<h2>Nuestra Ubicación</h2>
+<iframe src="https://maps.google.com/maps?q=5.5356801,-73.3677943&t=&z=17&ie=UTF8&iwloc=&output=embed" title="Ubicación Institución Semillitas del Saber" loading="lazy"></iframe>
+</section>
+<section class="formulario">
+<h2>Formulario de Inscripción</h2>
+<form>
+
+<div class="grupo">
+<label for="nombre">Nombre Completo</label>
+<input type="text" id="nombre" required minlength="5">
+</div>
+
+<div class="grupo">
+<label for="documento">Documento de Identidad</label>
+<input type="number" id="documento" required>
+</div>
+
+<div class="grupo">
+<label for="correo">Correo Electrónico</label>
+<input type="email" id="correo" required>
+</div>
+
+<div class="grupo">
+<label for="telefono">Teléfono</label>
+<input type="tel" id="telefono" pattern="[0-9]{10}" placeholder="3101234567" required>
+</div>
+
+<div class="grupo">
+<label for="grado">Grado de Interés</label>
+<select id="grado" required>
+<option value="">Seleccione...</option>
+<option>Preescolar</option>
+<option>Básica Primaria</option>
+<option>Básica Secundaria</option>
+<option>Media Académica</option>
+</select>
+</div>
+
+<div class="grupo mensaje">
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" rows="5"></textarea>
+</div>
+
+<div class="botones">
+<button type="submit" class="btn-enviar">Enviar Solicitud</button>
+<button type="reset" class="btn-limpiar">Limpiar</button>
+</div>
+
+</form>
+
+</section>
+</main>
+<footer>
+
+    <div class="seccion">
+        <h3>Institución Educativa</h3>
+        <p>Semillitas del Saber</p>
+        <p>Formando líderes para el futuro.</p>
+    </div>
+
+    <div class="seccion">
+        <h3>Ubicación</h3>
+        <p>Tunja - Boyacá</p>
+        <p>Calle 23 # 0-00</p>
+    </div>
+
+    <div class="seccion">
+        <h3>Contacto</h3>
+        <p>313 789 9023</p>
+        <p>contacto@semillitasdelsaber.edu.co</p>
+    </div>
+
+    <div class="seccion">
+        <h3>Síguenos</h3>
+        <a href="#" class="red-social">Facebook</a>
+        <a href="#" class="red-social">Instagram</a>
+        <a href="#" class="red-social">WhatsApp</a>
+    </div>
+
+</footer>
+
+<div class="copyright">
+    <p>© 2026 Institución Educativa Técnica Semillitas del Saber | Todos los derechos reservados.</p>
+</div>
+
+</body>
+</html>

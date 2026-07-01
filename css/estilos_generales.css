@@ -1,0 +1,421 @@
+
+/*==== Reset básico =======*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===== Barra de navegación ======*/
+nav{
+    background-color: #4973ba;
+}
+
+.menu{
+    list-style: none;
+    background: #003366;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*===== Logo menú =====*/
+.logo-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.logo-menu img{
+    display: block;
+}
+
+.logo-texto{
+    color: white;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/*===== Menú principal =====*/
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    background: #0055aa;
+}
+
+/*===== Submenú =====*/
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #004080;
+    list-style: none;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    width: 100%;
+}
+
+.submenu li a{
+    padding: 12px;
+}
+
+/*===== Header =====*/
+header{
+    background-color: #0c2c4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/*===== Banner =====*/
+.banner{
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 70px;
+}
+
+.banner p{
+    font-size: 25px;
+}
+
+/*===== Noticias =====*/
+.noticias{
+    text-align: center;
+    padding: 30px;
+}
+
+.noticias h2{
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.contenedor-noticias{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 350px;
+    max-width: 100%;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.2);
+}
+
+/*===== Footer =====*/
+footer{
+    background-color: #003b75;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+}
+
+.seccion{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.seccion h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.seccion p{
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.red-social{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.red-social:hover{
+    color: #87ceeb;
+    padding-left: 5px;
+}
+
+/*===== Copyright =====*/
+.copyright{
+    background-color: #002a54;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/*===== Responsive =====*/
+@media screen and (max-width:768px){
+
+    .menu{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo-menu{
+        justify-content: center;
+    }
+
+    .banner h1{
+        font-size: 40px;
+    }
+
+    .banner p{
+        font-size: 18px;
+    }
+
+    .contenedor-noticias{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .seccion{
+        width: 100%;
+    }
+}
+/* ===== HERO ===== */
+
+.hero{
+    height:85vh;
+
+    background:
+    linear-gradient(
+    rgba(0,35,80,.65),
+    rgba(0,35,80,.65)),
+    url("../img/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-contenido{
+    text-align:center;
+    color:white;
+}
+
+.hero-contenido h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-contenido p{
+    font-size:1.4rem;
+    margin-bottom:30px;
+}
+
+.hero-botones{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.btn-principal{
+    background:#d4a54a;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn-secundario{
+    border:2px solid white;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+}
+
+/* ===== ESTADISTICAS ===== */
+
+.estadisticas{
+    width:90%;
+    margin:-70px auto 70px auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.estadistica-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+}
+
+.estadistica-card h2{
+    color:#003366;
+    font-size:2.5rem;
+}
+
+.estadistica-card p{
+    margin-top:10px;
+}
+
+/* ===== PRESENTACION ===== */
+
+.presentacion{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+
+    align-items:center;
+
+    padding:80px 0;
+}
+
+.presentacion-texto h2{
+    color:#003366;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.presentacion-texto p{
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+.presentacion-imagen img{
+    width:100%;
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ===== NOTICIAS ===== */
+
+.tarjeta{
+    background:white;
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-10px);
+}
+
+.tarjeta h2{
+    padding:15px;
+    text-align:center;
+    color:#003366;
+}
+
+.tarjeta img{
+    width:100%;
+    display:block;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .hero-contenido h1{
+        font-size:2.5rem;
+    }
+
+    .hero-botones{
+        flex-direction:column;
+    }
+
+    .estadisticas{
+        grid-template-columns:1fr;
+        margin-top:30px;
+    }
+
+    .presentacion{
+        grid-template-columns:1fr;
+    }
+}
+.foto-usuario{
+    margin-left: auto; /* la envía hacia la derecha */
+    list-style: none;
+}
+
+.foto-usuario img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* la vuelve circular */
+    object-fit: cover;
+    cursor: pointer;
+}
+.foto-usuario img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}

@@ -1,0 +1,245 @@
+
+/* ===== RESET BÁSICO ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== GENERAL ===== */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav{
+    background-color: #003366;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    background-color: #0055aa;
+}
+
+/* ===== LOGO MENÚ ===== */
+.logo-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.logo-texto{
+    color: white;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* ===== SUBMENÚ ===== */
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #004080;
+    min-width: 200px;
+    list-style: none;
+    z-index: 1000;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    width: 100%;
+}
+
+.submenu li a{
+    padding: 12px;
+}
+
+/* ===== CONTENIDO ===== */
+main{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.titulo{
+    text-align: center;
+    color: #003b75;
+    margin-bottom: 30px;
+}
+
+/* ===== TÍTULOS ===== */
+h2{
+    color: #003b75;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 5px solid #003b75;
+    padding-left: 10px;
+}
+
+h3{
+    color: #0055aa;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ===== PÁRRAFOS ===== */
+p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ===== IMÁGENES ===== */
+.logo,
+.bandera{
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.2);
+}
+
+/* ===== LISTAS ===== */
+.perfil-semillista,
+.lista-instalaciones,
+.enfoque{
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.perfil-semillista li,
+.lista-instalaciones li,
+.enfoque li{
+    margin-bottom: 10px;
+}
+
+/* ===== AUDIO ===== */
+audio{
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background-color: #003b75;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.seccion{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.seccion h3{
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.seccion p{
+    color: white;
+    text-align: left;
+}
+
+.red-social{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.red-social:hover{
+    color: #87ceeb;
+    padding-left: 5px;
+}
+
+/* ===== COPYRIGHT ===== */
+.copyright{
+    background-color: #002a54;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width:768px){
+
+    .menu{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo-menu{
+        justify-content: center;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .seccion{
+        width: 100%;
+    }
+
+    .seccion p{
+        text-align: center;
+    }
+}
+.foto-usuario{
+    margin-left: auto; /* la envía hacia la derecha */
+    list-style: none;
+}
+
+.foto-usuario img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* la vuelve circular */
+    object-fit: cover;
+    cursor: pointer;
+}
+.foto-usuario img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
